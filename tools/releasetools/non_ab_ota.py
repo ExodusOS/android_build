@@ -231,7 +231,7 @@ else if get_stage("%(bcb_dev)s") == "3/3" then
   build_date = target_info.GetBuildProp("ro.build.date")
   security_patch = target_info.GetBuildProp("ro.build.version.security_patch")
   device = target_info.GetBuildProp("ro.lineage.device")
-  script.PrintPixelExperienceBanner(android_version, build_id, build_date,
+  script.PrintExodusBanner(android_version, build_id, build_date,
                                   security_patch, device)
 
   device_specific.FullOTA_InstallBegin()
